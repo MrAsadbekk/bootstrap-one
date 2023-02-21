@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/nomalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container mb-4">
+      <h2 class="title mb-3 mt-3">Movies Catalog</h2>
+      <div class="d-flex gap-4">
+        <div class="row col-4">
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Amount (to the nearest dollar)"
+              placeholder="ave"
+            />
+          </div>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Amount (to the nearest dollar)"
+              placeholder="5"
+            />
+          </div>
+          <div class="input-group mb-3">
+            <button
+              class="btn btn-outline-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              All
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+          <div class="input-group mb-3">
+            <button
+              class="btn btn-outline-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Rating
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+          </div>
+          <div class="box col-auto">
+            <button type="submit" class="btn btn-one btn-primary mb-3">
+              Search
+            </button>
+          </div>
+          <div>
+            <h2 class="box__title">Bookmarket movies</h2>
+            <div>
+              <ul class="box__list">
+                <li class="box__item">
+                  Avengers:Infinity War
+                  <button type="button" class="btn btn-danger">Remove</button>
+                </li>
+                <li class="box__item">
+                  The Avengers
+                  <button type="button" class="btn btn-danger">Remove</button>
+                </li>
+                <li class="box__item box__item-one">
+                  12 Years a Slave
+                  <button type="button" class="btn btn-danger">Remove</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-8">
+          <p>Search result: 39</p>
+          <div class="alert alert-primary" role="alert">
+            A simple primary alert—check it out!
+          </div>
+          <div class="d-flex gap-4">
+            <div class="card">
+              <img
+                src="./img/InfinityWarAvengers-1.jpg"
+                class="card-img-top"
+                alt="..."
+                height="262"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Avengers: Infinity War</h5>
+                <p class="card__text">2018</p>
+                <p class="card__star">8.7</p>
+                <div class="d-flex gap-4">
+                  <a href="#" class="btn btn-primary">Watch trailer</a>
+                  <a href="#" class="btn btn-primary">More info</a>
+                  <a href="#" class="btn card__btn btn-primary">Bookmark</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./img/iron-man-2.webp" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">The Avengers</h5>
+                <p class="card__text">2012</p>
+                <p class="card__star">8.1</p>
+                <div class="d-flex gap-4">
+                  <a href="#" class="btn btn-primary">Watch trailer</a>
+                  <a href="#" class="btn btn-primary">More info</a>
+                  <a href="#" class="btn card__btn btn-primary">Bookmark</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav aria-label="...">
+            <ul class="pagination pagination-lg mt-5">
+              <li class="page-item active ms-auto" aria-current="page">
+                <span class="page-link">1</span>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">3</a>
+              </li>
+              <li class="page-item me-auto">
+                <a class="page-link" href="#">4</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
